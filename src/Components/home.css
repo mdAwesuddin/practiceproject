@@ -1,0 +1,40 @@
+#tshirts:hover{
+  background-color: blue;
+}
+.c-item{
+  height: 350px;
+}
+.c-img{
+  height:100%;
+  /* object-fit: cover; */
+}
+.row{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#link1{
+  position: relative;
+}
+#link1::after{
+ content:' ';
+ opacity: 0;
+ transition: all 0.2s;
+ height: 1px;
+ width: 100%;
+ background-color: greenyellow;
+ position: absolute;
+ bottom: 0;
+ left: 0;
+}
+#loader{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#link1:hover::after{
+ opacity: 1;
+}
+@media screen and (max-width: 992px) {
+  .card { padding: 0px 50px 0px; }
+}
